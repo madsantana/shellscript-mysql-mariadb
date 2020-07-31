@@ -21,16 +21,16 @@ function PrintUsage() {
 	echo
 	echo -e "\nconecta2.sh - Script simples que conecta em um banco de dados, com um usuário especificado"
 	echo "e executa o comando que está entre aspas como último parâmetro."
-    echo "-grant para GRANT, -revoke para REVOGAR permissões para o usuário informado."
-    echo
-    echo "OBS: Este script foi criado e testado utilizando MariaDB, em uma instalação Debian."
+        echo "-grant para GRANT, -revoke para REVOGAR permissões para o usuário informado."
+        echo
+        echo "OBS: Este script foi criado e testado utilizando MariaDB, em uma instalação Debian."
 	echo "==============================================================================================="
 	echo -e "EXEMPLO: ./`basename $0` usertest localhost mysql_bash -grant/revoke 'GRANT ALL PRIVILEGES ON * . *'"
-    echo
-    echo
+        echo
+        echo
 	sleep 2
-    echo "Pressione uma tecla para continuar..."
-    read CONTINUA
+        echo "Pressione uma tecla para continuar..."
+        read CONTINUA
 	exit 1
 
 }
@@ -41,9 +41,6 @@ MyHOST=${2:-"Host"}
 MyDB=${3:-"Db"}
 MyCOMMAND=${4:-"comando"}
 MyCOMMAND2=${5:-"comando2"}
-
-
-
 
 #Verifica se o primeiro pa
 if [ $# -lt 5 ]; then
