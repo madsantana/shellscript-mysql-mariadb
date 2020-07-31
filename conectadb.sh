@@ -42,7 +42,7 @@ MyDB=${3:-"Db"}
 MyCOMMAND=${4:-"comando"}
 MyCOMMAND2=${5:-"comando2"}
 
-#Verifica se o primeiro pa
+#Verifica se o primeiro parâmetros foram digitados corretamente
 if [ $# -lt 5 ]; then
     echo "É necessário informar os parâmetros corretamente..."
     echo
